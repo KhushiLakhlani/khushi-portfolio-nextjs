@@ -12,7 +12,7 @@ export default function Hero() {
           <h1 className="text-6xl md:text-7xl font-bold text-gray-800 leading-tight">
             Hi, I&apos;m{" "}
             <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 text-transparent bg-clip-text">
-              Khushi Lakhlani
+              Khushi
             </span>
           </h1>
 
