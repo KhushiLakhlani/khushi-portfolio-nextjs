@@ -26,22 +26,7 @@ export default function Projects() {
       github: "https://github.com/KhushiLakhlani/flight-booking-system",
       image: "✈️",
       color: "from-blue-400 to-cyan-400"
-    },
-
-    {
-  title: "Manufacturing Analytics Dashboard",
-  description: "Interactive BI dashboard analyzing 44,000+ sensor readings for Fortune 500 client at EY-Parthenon",
-  longDescription: [
-    "Built Python ETL pipeline to automate data processing from manufacturing historian system, reducing analysis time from 10+ hours/week to real-time",
-    "Created 7-chart dashboard in Google Looker Studio tracking production stages, temperature patterns, pressure levels, and chemical flow rates",
-    "Automated stage classification logic identifying 8 production phases (Recovery, Vacuum, Reaction, etc.) based on sensor thresholds",
-    "Identified $2M+ in cost savings and 18% efficiency improvement through data-driven operational insights"
-  ],
-  tech: ["Python", "Pandas", "NumPy", "Google Looker Studio", "ETL Pipeline", "Data Visualization", "Business Intelligence"],
-  github: "https://github.com/KhushiLakhlani/Manufacturing-Analytics-Dashboard",
-  image: "📊",
-  color: "from-blue-400 to-indigo-400"
-}
+    }
   ];
 
   return (
@@ -51,9 +36,6 @@ export default function Projects() {
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-gray-800 mb-4">Featured Projects</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-400 mx-auto rounded-full"></div>
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-            Check out some of my recent work showcasing full-stack development, machine learning, and data analysis
-          </p>
         </div>
 
         {/* Projects Grid */}
