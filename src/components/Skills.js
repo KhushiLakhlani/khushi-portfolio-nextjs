@@ -41,7 +41,8 @@ export default function Skills() {
   const certifications = [
     "Intel Cloud Computing (Fundamentals & Technical Professional)",
     "Intel Solutions Pro - AI Fundamentals",
-    "McKinsey Forward Program"
+    "McKinsey Forward Program",
+    "Graduate Leadership Institute - Northeastern University"
   ];
 
   return (

@@ -104,9 +104,6 @@ export default function About() {
 
             {/* What I'm Looking For */}
             <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl p-6 border-l-4 border-pink-400">
-              <p className="text-xl font-semibold text-gray-800 mb-2">
-                Currently Seeking Summer 2026 Internship Opportunities
-              </p>
               <p className="text-gray-700">
                 I'm seeking opportunities where I can leverage my international perspective and technical skills to tackle complex 
                 data challenges — whether that's engineering scalable pipelines, building analytics platforms, or turning raw data 

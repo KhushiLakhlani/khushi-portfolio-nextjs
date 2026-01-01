@@ -10,18 +10,6 @@ export default function Contact() {
 
         {/* Contact Card */}
         <div className="bg-white/70 backdrop-blur-lg rounded-3xl shadow-2xl p-8 md:p-12 border border-purple-100">
-          {/* Seeking Banner */}
-          <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-2xl p-6 mb-8 border-l-4 border-purple-400">
-            <h3 className="text-2xl font-bold text-gray-800 mb-2 flex items-center gap-2">
-              <span>🎯</span> Currently Seeking Summer 2026 Internships
-            </h3>
-            <p className="text-gray-700 text-lg">
-              in <span className="font-semibold text-gray-900">Software Engineering</span>,{' '}
-              <span className="font-semibold text-gray-900">Data Analytics</span>, and{' '}
-              <span className="font-semibold text-gray-900">Machine Learning</span> roles
-            </p>
-          </div>
-
           {/* Contact Info */}
           <div className="space-y-6 mb-8">
             <p className="text-gray-600 text-lg text-center">
