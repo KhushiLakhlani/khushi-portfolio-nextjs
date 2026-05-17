@@ -6,7 +6,7 @@ import { gradientText } from './styles'
 
 export default function Experience() {
   const experiences = [
-    { company: "Northeastern University", role: "Instructional Assistant", period: "Jan 2026 — Present", location: "Boston, MA", accent: '#a855f7',
+    { company: "Northeastern University", role: "Instructional Assistant", period: "Jan 2026 — March 2026", location: "Boston, MA", accent: '#a855f7',
       description: ["Supporting course instruction and student learning in Information Systems program"] },
     { company: "Ernst & Young (EY-Parthenon)", role: "Data Analyst Intern", period: "Jan 2025 — Apr 2025", location: "Mumbai, India", accent: '#ec4899',
       description: [
