@@ -2,11 +2,7 @@
 
 import { createContext, useContext, useState, useEffect } from 'react'
 
-const ThemeContext = createContext({
-  theme: 'dark',
-  toggleTheme: () => {},
-})
-
+const ThemeContext = createContext({ theme: 'dark', toggleTheme: () => {} })
 export const useTheme = () => useContext(ThemeContext)
 
 export default function ThemeProvider({ children }) {
@@ -31,9 +27,7 @@ export default function ThemeProvider({ children }) {
     document.documentElement.setAttribute('data-theme', next)
   }
 
-  if (!mounted) {
-    return <div style={{ visibility: 'hidden' }}>{children}</div>
-  }
+  if (!mounted) return <div style={{ visibility: 'hidden' }}>{children}</div>
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
