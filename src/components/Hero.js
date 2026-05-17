@@ -31,22 +31,15 @@ export default function Hero() {
     return () => clearTimeout(timeout)
   }, [charIndex, isDeleting, wordIndex])
 
-  const orb = (top, left, right, bottom, size, color) => ({
-    position: 'absolute', top, left, right, bottom,
-    width: size, height: size, borderRadius: '50%',
-    background: `radial-gradient(circle, ${color} 0%, transparent 70%)`,
-    pointerEvents: 'none',
-  })
-
   return (
     <section style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '80px 24px', position: 'relative', overflow: 'hidden' }}>
       {/* Gradient orbs */}
-      <div style={orb('-200px', undefined, '-150px', undefined, '500px', 'rgba(168,85,247,0.3)')} />
-      <div style={orb(undefined, '-100px', undefined, '-150px', '400px', 'rgba(236,72,153,0.25)')} />
-      <div style={orb('40%', '50%', undefined, undefined, '300px', 'rgba(59,130,246,0.2)')} />
+      <div style={{ position: 'absolute', top: '-200px', right: '-150px', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle, rgba(168,85,247,0.3) 0%, transparent 70%)', pointerEvents: 'none' }} />
+      <div style={{ position: 'absolute', bottom: '-150px', left: '-100px', width: 400, height: 400, borderRadius: '50%', background: 'radial-gradient(circle, rgba(236,72,153,0.25) 0%, transparent 70%)', pointerEvents: 'none' }} />
+      <div style={{ position: 'absolute', top: '40%', left: '50%', width: 300, height: 300, borderRadius: '50%', background: 'radial-gradient(circle, rgba(59,130,246,0.2) 0%, transparent 70%)', pointerEvents: 'none' }} />
 
-      <div style={{ maxWidth: '72rem', margin: '0 auto', width: '100%', display: 'grid', gridTemplateColumns: '3fr 2fr', gap: '48px', alignItems: 'center', position: 'relative', zIndex: 1 }} className="grid md:grid-cols-5">
-        {/* Text */}
+      <div className="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-5 gap-12 items-center relative z-10">
+        {/* Text — 3 cols */}
         <div className="md:col-span-3" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           <p style={{ color: '#a855f7', fontSize: 13, fontWeight: 500, letterSpacing: '2px', textTransform: 'uppercase' }}>
             MS Information Systems · Northeastern University
@@ -93,8 +86,8 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Profile */}
-        <div className="md:col-span-2" style={{ display: 'flex', justifyContent: 'center' }}>
+        {/* Profile — 2 cols */}
+        <div className="md:col-span-2 flex justify-center md:justify-end">
           <div style={{ position: 'relative' }}>
             <div style={{ position: 'absolute', inset: -4, borderRadius: 24, opacity: 0.5, filter: 'blur(20px)', background: 'linear-gradient(135deg, #ec4899, #a855f7)' }} />
             <div style={{ position: 'relative', width: 'clamp(280px, 25vw, 320px)', height: 'clamp(280px, 25vw, 320px)', borderRadius: 24, overflow: 'hidden', border: '1px solid var(--glass-border)' }}>
