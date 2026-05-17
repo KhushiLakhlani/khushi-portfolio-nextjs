@@ -6,12 +6,14 @@ import Projects from '@/components/Projects'
 import Testimonials from '@/components/Testimonials'
 import Skills from '@/components/Skills'
 import Contact from '@/components/Contact'
+import StarBackground from '@/components/StarBackground'
 
 export default function Home() {
   return (
     <>
+      <StarBackground />
       <Navbar />
-      <main>
+      <main style={{ position: 'relative', zIndex: 1 }}>
         <Hero />
         <About />
         <Experience />
