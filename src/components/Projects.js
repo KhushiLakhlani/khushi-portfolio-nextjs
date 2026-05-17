@@ -1,6 +1,32 @@
 export default function Projects() {
   const projects = [
     {
+      title: "AuditLens",
+      description: "ML-powered financial fraud detection system using SEC EDGAR filings across 500+ companies",
+      longDescription: [
+        "Built end-to-end pipeline extracting and cleaning 5,000+ financial records from SEC EDGAR API into a unified analytical layer",
+        "Engineered 40+ features from raw filing data and trained classification models to flag anomalous financial patterns",
+        "Designed interactive dashboards visualizing fraud risk indicators across 500+ S&P companies spanning 2007–2026"
+      ],
+      tech: ["Python", "Scikit-learn", "Pandas", "SEC EDGAR API", "Machine Learning", "Data Engineering"],
+      github: "https://github.com/KhushiLakhlani/AuditLens",
+      image: "🔍",
+      color: "from-emerald-400 to-teal-400"
+    },
+    {
+      title: "PitWall AI",
+      description: "AI-powered F1 analytics platform with natural language querying across 25 seasons of race data",
+      longDescription: [
+        "Built a full RAG pipeline using LangChain, ChromaDB, and Groq LLM to answer natural language queries across 10,500+ race records",
+        "Developed driver stats dashboard, head-to-head comparisons, and an all-time leaderboard with interactive visualizations",
+        "Designed FastAPI backend with React frontend enabling real-time AI-driven insights from 25 seasons of F1 data"
+      ],
+      tech: ["React", "FastAPI", "Python", "LangChain", "ChromaDB", "Groq LLM", "RAG"],
+      github: "https://github.com/KhushiLakhlani/pitwall-ai",
+      image: "🏎️",
+      color: "from-red-400 to-orange-400"
+    },
+    {
       title: "Aircraft Engine Predictive Maintenance",
       description: "Machine learning system for predicting aircraft engine failures using NASA C-MAPSS dataset",
       longDescription: [
