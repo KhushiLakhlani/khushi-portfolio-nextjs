@@ -1,121 +1,92 @@
 export default function About() {
+  const journey = [
+    {
+      flag: "UK",
+      title: "United Kingdom",
+      detail: "BSc Computer Science (First Class) · Intel Corporation · VP, Women in Engineering",
+    },
+    {
+      flag: "IN",
+      title: "India",
+      detail: "Data Analyst at EY-Parthenon · 44K+ records processed · 28% forecast improvement",
+    },
+    {
+      flag: "US",
+      title: "United States",
+      detail: "MS Information Systems at Northeastern · Instructional Assistant",
+    },
+  ]
+
   return (
-    <section id="about" className="py-20 px-6">
-      <div className="max-w-6xl mx-auto">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-gray-800 mt-2 mb-4">About Me</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-400 mx-auto rounded-full"></div>
+    <section id="about" className="py-32 px-6">
+      <div className="max-w-3xl mx-auto">
+        {/* Header */}
+        <p
+          className="text-sm font-medium tracking-widest uppercase mb-4"
+          style={{ color: 'var(--text-tertiary)' }}
+        >
+          About
+        </p>
+        <h2
+          className="text-4xl md:text-5xl mb-12 tracking-tight"
+          style={{ fontFamily: 'var(--font-heading)', color: 'var(--text-primary)' }}
+        >
+          The why behind the work
+        </h2>
+
+        {/* Prose */}
+        <div className="space-y-6 text-lg leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+          <p>
+            I&apos;m drawn to the intersection of technology, data, and strategy — not just how systems work,
+            but how they help organizations make better decisions. That curiosity has taken me across three
+            continents, each stop adding a new dimension to how I think about data.
+          </p>
+
+          <p>
+            At <span style={{ color: 'var(--text-primary)' }}>Intel</span>, I supported the deployment
+            of 1,200+ VDI cloud instances ($3.2M value) and led automation initiatives that
+            generated $6.8M in additional value while reducing manual workload by 70%.
+            At <span style={{ color: 'var(--text-primary)' }}>EY-Parthenon</span>, I built Python
+            pipelines that eliminated 10 hours of weekly manual analysis and improved forecast
+            accuracy by 28%.
+          </p>
+
+          <p>
+            Beyond technical work, I served as Vice President of the Women in Engineering
+            Society at Coventry University — building partnerships between academia and industry
+            to make technology careers more accessible.
+          </p>
         </div>
 
-        {/* Content */}
-        <div className="bg-white/70 backdrop-blur-lg rounded-3xl shadow-xl p-8 md:p-12 border border-purple-100">
-          <div className="space-y-8 text-gray-700 text-lg leading-relaxed">
-            
-            {/* Opening Statement */}
-            <p className="text-xl">
-              I have always been curious about the <span className="font-semibold text-gray-900">'why' behind the technology</span> — 
-              not just how it works, but how it helps organizations make strategic decisions that drive real impact. I enjoy working 
-              at the intersection of <span className="font-semibold text-gray-900">technology, data, and strategy</span>, solving 
-              real-world problems that matter.
-            </p>
-            
-            {/* Global Journey with Flag Boxes */}
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Global Journey</h3>
-              <p className="mb-6">
-                This curiosity has taken me across three continents — from earning a First-Class (Honours) degree in Computer Science 
-                and working for Intel Corporation in the UK, to driving manufacturing analytics at EY-Parthenon in India, to pursuing my Master of Science in Information Systems 
-                at Northeastern University in Boston.
+        {/* Journey cards */}
+        <div className="grid md:grid-cols-3 gap-4 mt-14">
+          {journey.map((item) => (
+            <div
+              key={item.flag}
+              className="p-6 rounded-2xl"
+              style={{ backgroundColor: 'var(--bg-surface)', border: '1px solid var(--border)' }}
+            >
+              <p className="text-xs font-medium tracking-widest uppercase mb-3" style={{ color: 'var(--text-tertiary)' }}>
+                {item.flag}
               </p>
-              
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 border border-purple-200">
-                  <div className="text-4xl mb-3">🇬🇧</div>
-                  <h4 className="font-bold text-gray-900 mb-2">United Kingdom</h4>
-                  <p className="text-sm text-gray-600">
-                    First-Class Honours in Computer Science • Intel Corporation Technical Sales • Vice President, Women in Engineering Society
-                  </p>
-                </div>
-                
-                <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-6 border border-pink-200">
-                  <div className="text-4xl mb-3">🇮🇳</div>
-                  <h4 className="font-bold text-gray-900 mb-2">India</h4>
-                  <p className="text-sm text-gray-600">
-                    Data Analyst at EY-Parthenon • Engineered pipelines processing 44K+ rows • 28% forecast accuracy improvement
-                  </p>
-                </div>
-                
-                <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-6 border border-blue-200">
-                  <div className="text-4xl mb-3">🇺🇸</div>
-                  <h4 className="font-bold text-gray-900 mb-2">United States</h4>
-                  <p className="text-sm text-gray-600">
-                    MS in Information Systems • Instructional Assistant
-                  </p>
-                </div>
-              </div>
+              <p className="font-semibold mb-2" style={{ color: 'var(--text-primary)' }}>{item.title}</p>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>{item.detail}</p>
             </div>
+          ))}
+        </div>
 
-            {/* Professional Impact */}
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Professional Impact</h3>
-              <div className="space-y-4">
-                <p>
-                  At <span className="text-gray-900">Intel</span>, I supported the deployment of{' '}
-                  <span className="text-gray-900">1,200+ VDI cloud instances</span> ($3.2M value) and led automation 
-                  initiatives that generated <span className="text-gray-900">$6.8M in additional value</span> while 
-                  reducing manual workload by <span className="text-gray-900">70%</span> across four regional teams.
-                </p>
-                
-                <p>
-                  At <span className="text-gray-900">EY-Parthenon</span>, I engineered Python pipelines that eliminated{' '}
-                  <span className="text-gray-900">10 hours of weekly manual analysis</span>, reduced data errors by{' '}
-                  <span className="text-gray-900">35%</span>, and improved forecast accuracy by{' '}
-                  <span className="text-gray-900">28%</span>. These weren't just technical wins — they were solutions 
-                  that enabled faster, data-driven decision-making.
-                </p>
-              </div>
-            </div>
-
-            {/* Leadership & Inclusivity */}
-            <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-6 border-l-4 border-purple-400">
-              <h3 className="text-xl font-bold text-gray-800 mb-3 flex items-center gap-2">
-                <span>👥</span> Leadership & Inclusivity
-              </h3>
-              <div className="space-y-4 text-gray-700">
-                <p>
-                  Beyond technical work, I'm deeply committed to making technology accessible and inclusive. At{' '}
-                  <span className="text-gray-900">Intel</span>, I actively participated in{' '}
-                  <span className="text-gray-900">Intel One Volunteering initiatives</span>, where I raised funds 
-                  for cancer awareness, led STEM informational sessions at local schools, and promoted Intel internships at 
-                  universities — working to open doors for the next generation of technologists.
-                </p>
-                
-                <p>
-                  This commitment continued when I served as <span className="font-semibold text-gray-900">Vice President of the 
-                  Women in Engineering Society at Coventry University</span>, where I co-led a university-funded society to empower students through 
-                  mentorship guidance, events, alumni sessions, and create an inclusive community. I built strategic 
-                  partnerships between academia and industry and worked to ensure that technology careers were accessible to
-                  everyone.
-                </p>
-                
-              </div>
-            </div>
-
-            {/* What I'm Looking For */}
-            <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl p-6 border-l-4 border-pink-400">
-              <p className="text-gray-700">
-                I'm seeking opportunities where I can leverage my international perspective and technical skills to tackle complex 
-                data challenges — whether that's engineering scalable pipelines, building analytics platforms, or turning raw data 
-                into strategic insights that drive business decisions.
-              </p>
-              <p className="text-gray-600 mt-3">
-                Focus areas: <span className="font-medium text-gray-900">Data Engineering</span>,{' '}
-                <span className="font-medium text-gray-900">Software Engineering</span>, and{' '}
-                <span className="font-medium text-gray-900">Machine Learning</span>
-              </p>
-            </div>
-          </div>
+        {/* Looking for */}
+        <div
+          className="mt-14 p-6 rounded-2xl"
+          style={{ backgroundColor: 'var(--bg-elevated)', borderLeft: '2px solid var(--text-tertiary)' }}
+        >
+          <p className="text-lg leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+            I&apos;m seeking opportunities to tackle complex data challenges — whether that&apos;s engineering
+            scalable pipelines, building analytics platforms, or turning raw data into strategic insights.
+          </p>
+          <p className="text-sm mt-3" style={{ color: 'var(--text-tertiary)' }}>
+            Focus areas: Data Engineering, Software Engineering, Machine Learning
+          </p>
         </div>
       </div>
     </section>

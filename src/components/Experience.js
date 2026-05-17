@@ -3,173 +3,123 @@ export default function Experience() {
     {
       company: "Northeastern University",
       role: "Instructional Assistant",
-      period: "January 2026 - Present",
+      period: "Jan 2026 — Present",
       location: "Boston, MA",
       description: [
-        "Supporting course instruction and student learning in Information Systems program"
+        "Supporting course instruction and student learning in Information Systems program",
       ],
-      logo: "🎓",
-      color: "from-red-400 to-red-600"
     },
     {
-      company: "Ernst and Young (EY - Parthenon)",
+      company: "Ernst & Young (EY-Parthenon)",
       role: "Data Analyst Intern",
-      period: "January 2025 - April 2025",
+      period: "Jan 2025 — Apr 2025",
       location: "Mumbai, India",
       description: [
-        "Developed Python automation scripts to process 44,000+ rows of time-series manufacturing sensor data, eliminating 10 hours weekly in manual Excel-based analysis",
-        "Engineered data validation and quality checks in Python, reducing data errors by 35%",
-        "Designed scalable data processing pipelines using Pandas and NumPy, improving process efficiency by 18%",
-        "Generated statistical forecasting models improving forecast accuracy by 28%"
+        "Developed Python automation scripts to process 44,000+ rows of time-series manufacturing data, eliminating 10 hours weekly of manual analysis",
+        "Engineered data validation and quality checks, reducing data errors by 35%",
+        "Designed scalable processing pipelines using Pandas and NumPy, improving process efficiency by 18%",
+        "Generated statistical forecasting models improving forecast accuracy by 28%",
       ],
-      logo: "💼",
-      color: "from-yellow-400 to-yellow-600"
-    },
-    {
-      company: "Coventry University",
-      role: "Student Ambassador",
-      period: "October 2023 - July 2024",
-      location: "Coventry, UK",
-      description: [
-        "Represented the university at open days, campus tours, and recruitment events",
-        "Provided prospective students with insights into student life, academics, and campus facilities",
-        "Assisted with event coordination and student engagement activities"
-      ],
-      logo: "🎓",
-      color: "from-blue-400 to-blue-600"
-    },
-    {
-      company: "Women in Engineering Society",
-      role: "Vice President",
-      period: "September 2023 - September 2024",
-      location: "Coventry, UK",
-      description: [
-        "Co-led a university-funded society to empower students through mentorship guidance, events, and alumni sessions",
-        "Organized networking events, workshops, and mentorship programs for 100+ members",
-        "Built strategic partnerships between academia and industry to create an inclusive community",
-        "Managed society operations, budget planning, and event logistics"
-      ],
-      logo: "👥",
-      color: "from-purple-400 to-purple-600"
     },
     {
       company: "Intel Corporation",
       role: "Technical Sales Specialist Intern",
-      period: "July 2022 - September 2023",
+      period: "Jul 2022 — Sep 2023",
       location: "Swindon, UK",
       description: [
-        "Supported end-to-end sales cycle deploying 1,200+ VDI cloud instances (USD $3.2M value)",
-        "Led automation initiative generating USD $2M in incremental impact and USD $6.8M in additional value",
+        "Supported end-to-end sales cycle deploying 1,200+ VDI cloud instances ($3.2M value)",
+        "Led automation initiative generating $2M in incremental impact and $6.8M in additional value",
         "Launched automation program across 4 UK regional teams, reducing manual workload by 70%",
         "Delivered technical demos of Intel vPro Technology to partner sales teams",
-        "Participated in Intel One Volunteering: raised funds for cancer awareness and led STEM sessions at schools"
       ],
-      logo: "💻",
-      color: "from-blue-500 to-cyan-500"
+    },
+  ]
+
+  const leadership = [
+    {
+      role: "Vice President",
+      org: "Women in Engineering Society",
+      period: "Sep 2023 — Sep 2024",
     },
     {
-      company: "BCS, The Chartered Institute for IT",
+      role: "Student Ambassador",
+      org: "Coventry University",
+      period: "Oct 2023 — Jul 2024",
+    },
+    {
       role: "Committee Member",
-      period: "September 2021 - July 2022",
-      location: "Coventry, UK",
-      description: [
-        "Served on committee through BCS Coventry University Student Chapter",
-        "Developed platform for students to enhance IT knowledge through discussions and debates",
-        "Facilitated networking opportunities with BCS members across university chapter network",
-        "Organized events with professional guest speakers to provide industrial guidance"
-      ],
-      logo: "💼",
-      color: "from-indigo-400 to-blue-600"
+      org: "BCS, The Chartered Institute for IT",
+      period: "Sep 2021 — Jul 2022",
     },
     {
-      company: "Coventry University Students' Union",
       role: "Course Representative",
-      period: "September 2021 - June 2022",
-      location: "Coventry, UK",
-      description: [
-        "Represented BSc Computer Science students and voiced opinions to university teaching staff",
-        "Collaborated with other course representatives to create engaging educational experiences",
-        "Organized student events and ran polls throughout the year to gather student feedback",
-        "Advocated for curriculum improvements and student support initiatives"
-      ],
-      logo: "🎓",
-      color: "from-teal-400 to-green-500"
+      org: "Coventry University Students' Union",
+      period: "Sep 2021 — Jun 2022",
     },
-    {
-      company: "Women in Engineering Society",
-      role: "Member",
-      period: "October 2021 - September 2023",
-      location: "Coventry, UK",
-      description: [
-        "Actively participated in society events, workshops, and professional development sessions",
-        "Contributed to initiatives promoting women's representation in engineering and technology",
-        "Collaborated with peers on outreach programs for local schools"
-      ],
-      logo: "👥",
-      color: "from-pink-400 to-pink-600"
-    }
-  ];
+  ]
 
   return (
-    <section id="experience" className="py-20 px-6 bg-white/30">
-      <div className="max-w-6xl mx-auto">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-gray-800 mb-4">Experience</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-400 mx-auto rounded-full"></div>
+    <section id="experience" className="py-32 px-6">
+      <div className="max-w-3xl mx-auto">
+        {/* Header */}
+        <p className="text-sm font-medium tracking-widest uppercase mb-4" style={{ color: 'var(--text-tertiary)' }}>
+          Experience
+        </p>
+        <h2 className="text-4xl md:text-5xl mb-16 tracking-tight" style={{ fontFamily: 'var(--font-heading)', color: 'var(--text-primary)' }}>
+          Where I&apos;ve worked
+        </h2>
+
+        {/* Experience cards */}
+        <div className="space-y-0">
+          {experiences.map((exp, index) => (
+            <div
+              key={index}
+              className="py-10"
+              style={{ borderBottom: '1px solid var(--border)' }}
+            >
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-1 mb-5">
+                <div>
+                  <h3 className="text-xl font-semibold" style={{ color: 'var(--text-primary)' }}>
+                    {exp.role}
+                  </h3>
+                  <p className="text-base mt-1" style={{ color: 'var(--text-secondary)' }}>
+                    {exp.company}
+                  </p>
+                </div>
+                <div className="md:text-right mt-1 md:mt-0 flex-shrink-0">
+                  <p className="text-sm" style={{ color: 'var(--text-tertiary)' }}>{exp.period}</p>
+                  <p className="text-sm" style={{ color: 'var(--text-tertiary)' }}>{exp.location}</p>
+                </div>
+              </div>
+
+              <ul className="space-y-3">
+                {exp.description.map((item, i) => (
+                  <li key={i} className="text-[15px] leading-relaxed flex items-start gap-3" style={{ color: 'var(--text-secondary)' }}>
+                    <span className="mt-2 w-1 h-1 rounded-full flex-shrink-0" style={{ backgroundColor: 'var(--text-tertiary)' }} />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
-        {/* Timeline */}
-        <div className="relative">
-          {/* Vertical Line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-pink-300 via-purple-300 to-blue-300"></div>
+        {/* Leadership */}
+        <div className="mt-20">
+          <p className="text-sm font-medium tracking-widest uppercase mb-8" style={{ color: 'var(--text-tertiary)' }}>
+            Leadership & Community
+          </p>
 
-          {/* Experience Cards */}
-          <div className="space-y-12">
-            {experiences.map((exp, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {leadership.map((item, index) => (
               <div
                 key={index}
-                className={`relative flex items-center ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                }`}
+                className="p-5 rounded-xl"
+                style={{ backgroundColor: 'var(--bg-surface)', border: '1px solid var(--border)' }}
               >
-                {/* Timeline Dot */}
-                <div className="absolute left-8 md:left-1/2 w-4 h-4 bg-white border-4 border-purple-400 rounded-full transform -translate-x-1/2 z-10"></div>
-
-                {/* Content Card */}
-                <div className={`ml-20 md:ml-0 md:w-5/12 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
-                  <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 border border-purple-100">
-                    {/* Company Header */}
-                    <div className="flex items-start gap-4 mb-4">
-                      <div className={`w-12 h-12 bg-gradient-to-br ${exp.color} rounded-xl flex items-center justify-center text-2xl flex-shrink-0 shadow-lg`}>
-                        {exp.logo}
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-xl font-bold text-gray-800">{exp.role}</h3>
-                        <p className="text-purple-600 font-medium">{exp.company}</p>
-                        <div className="flex flex-wrap gap-2 mt-1 text-sm text-gray-500">
-                          <span className="flex items-center gap-1">
-                            📅 {exp.period}
-                          </span>
-                          <span>•</span>
-                          <span className="flex items-center gap-1">
-                            📍 {exp.location}
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Description */}
-                    <ul className="space-y-2">
-                      {exp.description.map((item, i) => (
-                        <li key={i} className="text-gray-600 text-sm flex items-start gap-2">
-                          <span className="text-purple-400 mt-1">▸</span>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
+                <p className="font-medium text-sm" style={{ color: 'var(--text-primary)' }}>{item.role}</p>
+                <p className="text-sm mt-1" style={{ color: 'var(--text-secondary)' }}>{item.org}</p>
+                <p className="text-xs mt-2" style={{ color: 'var(--text-tertiary)' }}>{item.period}</p>
               </div>
             ))}
           </div>

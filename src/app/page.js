@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-slate-50">
+      <main>
         <Hero />
         <About />
         <Experience />
