@@ -2,7 +2,7 @@
 
 import ScrollReveal from './ScrollReveal'
 import GlassCard from './GlassCard'
-import { tagPink, tagPurple, tagBlue, gradientText } from './Styles'
+import { tagPink, tagPurple, tagBlue, gradientText } from './styles'
 
 const tc = [tagPink, tagPurple, tagBlue]
 

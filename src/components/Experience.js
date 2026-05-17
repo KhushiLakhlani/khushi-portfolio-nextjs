@@ -2,7 +2,7 @@
 
 import ScrollReveal from './ScrollReveal'
 import GlassCard from './GlassCard'
-import { gradientText } from './Styles'
+import { gradientText } from './styles'
 
 export default function Experience() {
   const experiences = [

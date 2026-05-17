@@ -1,8 +1,8 @@
 'use client'
 
 import ScrollReveal from './ScrollReveal'
-import GlassCard from './Glasscard'
-import { gradientText, btnOutline } from './Styles'
+import GlassCard from './GlassCard'
+import { gradientText, btnOutline } from './styles'
 
 export default function Testimonials() {
   const testimonials = [

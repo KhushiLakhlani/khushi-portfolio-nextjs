@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useTheme } from './ThemeProvider'
-import { gradientText, btnGlow } from './Styles'
+import { gradientText, btnGlow } from './styles'
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
