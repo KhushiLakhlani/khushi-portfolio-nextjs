@@ -30,8 +30,7 @@ export default function Education() {
     <section id="education" style={{ padding: '112px 24px' }}>
       <div style={{ maxWidth: '56rem', margin: '0 auto' }}>
         <ScrollReveal>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
-            <div style={{ width: 10, height: 10, borderRadius: '50%', background: '#a855f7' }} />
+          <div style={{ marginBottom: 16 }}>
             <p style={{ color: '#a855f7', fontSize: 13, fontWeight: 500, letterSpacing: 2, textTransform: 'uppercase' }}>
               Education
             </p>
