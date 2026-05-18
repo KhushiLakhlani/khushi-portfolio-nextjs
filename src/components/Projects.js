@@ -24,6 +24,10 @@ export default function Projects() {
       points: ["Complete booking workflow with seat selection, authentication, and management", "RESTful APIs using Spring Boot with JWT authentication", "React frontend with MySQL database for users, flights, and bookings"],
       tech: ["React", "Spring Boot", "MySQL", "REST API", "JWT", "Java"],
       github: "https://github.com/KhushiLakhlani/flight-booking-system" },
+    { title: "Manufacturing Analytics Dashboard", description: "Interactive BI dashboard analyzing 44,000+ manufacturing sensor readings for a Fortune 500 client at EY-Parthenon.", accent: '#10b981',
+      points: ["ETL pipeline automating identification of 8 production phases across 9 manufacturing stages, replacing 10+ hours of weekly manual Excel work", "Time-series and statistical analysis on sensor data including temperature, pressure, chemical flow rates, and RPM stability", "7-chart Google Looker Studio dashboard providing real-time production visibility and enabling predictive maintenance planning"],
+      tech: ["Python", "Pandas", "NumPy", "Looker Studio", "ETL", "Time-Series Analysis"],
+      github: "https://github.com/KhushiLakhlani/Manufacturing-Analytics-Dashboard" },
   ]
 
   return (
