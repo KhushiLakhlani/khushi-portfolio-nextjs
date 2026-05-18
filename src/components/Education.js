@@ -10,7 +10,7 @@ export default function Education() {
       degree: "MS · Information Systems",
       period: "Sep 2025 – December 2027",
       location: "Boston, MA",
-      gpa: "3.73",
+      gpa: "3.8",
       accent: '#ec4899',
       logo: '/neu-logo.png',
       logoFallback: 'NEU',
@@ -58,7 +58,7 @@ export default function Education() {
                       <img
                         src={school.logo}
                         alt={school.name}
-                        style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 14 }}
+                        style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: 14, padding: '6px', background: 'white' }}
                         onError={(e) => {
                           e.target.style.display = 'none'
                           e.target.parentNode.innerHTML = `<span style="font-size:14px;font-weight:700;color:var(--text-secondary)">${school.logoFallback}</span>`
