@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
+import Education from '@/components/Education'
 import Experience from '@/components/Experience'
 import Projects from '@/components/Projects'
 import Testimonials from '@/components/Testimonials'
@@ -16,6 +17,7 @@ export default function Home() {
       <main style={{ position: 'relative', zIndex: 1 }}>
         <Hero />
         <About />
+        <Education />
         <Experience />
         <Projects />
         <Testimonials />
