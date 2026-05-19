@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { gradientText, btnGlow, btnOutline } from './styles'
 
 export default function Hero() {
-  const words = ['data pipelines', 'ML models', 'analytics platforms', 'automation systems', 'fraud detection']
+  const words = ['data pipelines', 'machine learning models', 'analytics platforms', 'automation systems', 'interactive dashboards', 'predictive analytics strategies']
   const [wordIndex, setWordIndex] = useState(0)
   const [charIndex, setCharIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
@@ -57,7 +57,7 @@ export default function Hero() {
           </div>
 
           <p style={{ fontSize: 18, lineHeight: 1.7, maxWidth: 540, color: 'var(--text-tertiary)' }}>
-            Data analyst and full-stack developer with expertise in Python, Java, React, and SQL. Experienced in building ETL pipelines, analytics platforms, and automation systems.
+            Passionate about turning data into impact. I design intelligent solutions that simplify complexity — from predictive models to interactive dashboards — powered by analytics, machine learning, and a love for clean data
           </p>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: 16, paddingTop: 8 }}>
