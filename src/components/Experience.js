@@ -33,7 +33,7 @@ export default function Experience() {
   ]
 
   return (
-    <section id="experience" style={{ padding: '112px 24px', position: 'relative', overflow: 'hidden' }}>
+    <section id="experience" style={{ padding: '112px 24px', position: 'relative' }}>
       <div style={{ position: 'absolute', top: '-100px', right: '-150px', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle, rgba(236,72,153,0.2) 0%, transparent 70%)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', bottom: '-150px', left: '-100px', width: 400, height: 400, borderRadius: '50%', background: 'radial-gradient(circle, rgba(168,85,247,0.2) 0%, transparent 70%)', pointerEvents: 'none' }} />
       <div style={{ maxWidth: '56rem', margin: '0 auto', position: 'relative', zIndex: 1 }}>

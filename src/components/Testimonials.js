@@ -18,7 +18,7 @@ export default function Testimonials() {
   ]
 
   return (
-    <section id="testimonials" style={{ padding: '112px 24px', position: 'relative', overflow: 'hidden' }}>
+    <section id="testimonials" style={{ padding: '112px 24px', position: 'relative' }}>
       <div style={{ position: 'absolute', top: '-100px', left: '-150px', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle, rgba(168,85,247,0.25) 0%, transparent 70%)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', bottom: '-100px', right: '-100px', width: 400, height: 400, borderRadius: '50%', background: 'radial-gradient(circle, rgba(236,72,153,0.2) 0%, transparent 70%)', pointerEvents: 'none' }} />
       <div style={{ maxWidth: '64rem', margin: '0 auto', position: 'relative', zIndex: 1 }}>
