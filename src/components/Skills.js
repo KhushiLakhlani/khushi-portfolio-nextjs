@@ -24,10 +24,8 @@ export default function Skills() {
   ]
 
   return (
-    <section id="skills" style={{ padding: '112px 24px', position: 'relative' }}>
-      <div style={{ position: 'absolute', top: '-100px', right: '-150px', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle, rgba(168,85,247,0.25) 0%, transparent 70%)', pointerEvents: 'none' }} />
-      <div style={{ position: 'absolute', bottom: '-150px', left: '-100px', width: 400, height: 400, borderRadius: '50%', background: 'radial-gradient(circle, rgba(59,130,246,0.2) 0%, transparent 70%)', pointerEvents: 'none' }} />
-      <div style={{ maxWidth: '64rem', margin: '0 auto', position: 'relative', zIndex: 1 }}>
+    <section id="skills" style={{ padding: '112px 24px' }}>
+      <div style={{ maxWidth: '64rem', margin: '0 auto' }}>
         <ScrollReveal>
           <p style={{ color: '#a855f7', fontSize: 13, fontWeight: 500, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 16 }}>Skills</p>
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 700, marginBottom: 64, fontFamily: 'var(--font-heading)', color: 'var(--text-primary)' }}>Technical toolkit</h2>
