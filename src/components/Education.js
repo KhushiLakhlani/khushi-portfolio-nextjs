@@ -38,7 +38,7 @@ export default function Education() {
             </p>
           </div>
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 700, marginBottom: 48, fontFamily: 'var(--font-heading)', color: 'var(--text-primary)' }}>
-            Where I studied.
+            Where I studied
           </h2>
         </ScrollReveal>
 
